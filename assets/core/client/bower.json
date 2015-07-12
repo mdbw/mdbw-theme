@@ -1,0 +1,27 @@
+{
+  "name": "mdbw_theme",
+  "version": "0.0.1",
+  "homepage": "http://www.miamidolphinsbahamas.com",
+  "authors": [
+    "Robert Henderson"
+  ],
+  "description": "Compiles SASS into CSS, checks JS, other cool stuff.",
+  "keywords": [
+    "grunt",
+    "bower",
+    "sass",
+    "js",
+    "css"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "compass-mixins": "~1.0.2"
+  },
+  "main": "bower.json"
+}

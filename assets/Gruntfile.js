@@ -16,7 +16,9 @@ module.exports = function(grunt) {
         sass: {
             all: {
                 options: {
-                    style: 'compressed'
+                    //includePaths: ['bower_components/compass-mixins/lib'],
+                    sourceMap: true,
+                    outputStyle: 'expanded'
                 },
                 files: {
                     'css/mdbw.css': 'sass/mdbw.scss'
@@ -37,7 +39,7 @@ module.exports = function(grunt) {
         },
         watch: {
             sass: {
-                files: ['sass/mdbw.scss'],
+                files: ['sass/**/*.scss'],
                 tasks: ['sass:all']
             },
             livereload: {

@@ -1,0 +1,11 @@
+section.post-image {
+	height: 250px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

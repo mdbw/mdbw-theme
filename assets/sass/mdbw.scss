@@ -1,26 +1,7 @@
-body {
-   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 30px;
-   -webkit-font-smoothing: antialiased;
-}
+// Bootstrap
+@import "bootstrap";
 
-h1, h2, h3 {
-	font-family: 'Times', serif;
-	font-weight: 400;
-	font-style: italic;
-	letter-spacing: -0.02em;
-}
+@import "default";
 
-h4, h5, h6 {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 32px;
-	text-transform: uppercase;
-}
-
-p {
-	margin-bottom: 20px;
-}
+// Partials
+@import "partials/loop";

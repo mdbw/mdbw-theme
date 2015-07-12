@@ -7,6 +7,7 @@
     {{author}} on <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" in "}}
 </p>
     </header>
+    {{#if image}}<section class="post-image"><img src={{image}} /></section>{{/if}}
     <section class="post-excerpt">
         <p>{{excerpt words="80"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
     </section>
