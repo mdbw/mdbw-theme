@@ -1,0 +1,36 @@
+{
+  "name": "mdbw_theme",
+  "version": "0.1.0",
+  "description": "Compiles SASS into CSS, checks JS, other cool stuff.",
+  "namespace": "mdbw",
+  "module": "mdbw_theme",
+  "homepage": "http://www.miamidolphinsbahamas.com",
+  "bugs": "robert@miamidolphinsbahamas.com",
+  "author": {
+    "name": "Robert Henderson",
+    "email": "robert@miamidolphinsbahamas.com",
+    "twitter": "roberthenderson",
+    "url": "http://www.miamidolphinsbahamas.com",
+    "copyright": "Copyright © 2015 MDBW"
+  },
+  "keywords": [
+    "grunt",
+    "sass",
+    "jQuery",
+    "JS",
+    "Ghost",
+    "NodeJS"
+  ],
+  "devDependencies": {
+    "autoprefixer-core": "*",
+    "csswring": "*",
+    "grunt": "*",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-postcss": "*"
+  },
+  "dependencies": {
+    "load-grunt-tasks": "*"
+  }
+}
