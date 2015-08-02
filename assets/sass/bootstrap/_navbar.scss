@@ -110,7 +110,7 @@
     margin-right: -$navbar-padding-horizontal;
     margin-left:  -$navbar-padding-horizontal;
 
-    @media (min-width: $grid-float-breakpoint) {
+    @media screen and (min-width: $grid-float-breakpoint) {
       margin-right: 0;
       margin-left:  0;
     }
@@ -230,8 +230,6 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
-
   > li > a {
     padding-top:    10px;
     padding-bottom: 10px;
@@ -381,7 +379,6 @@
   }
   .navbar-right {
     float: right !important;
-  margin-right: -$navbar-padding-horizontal;
 
     ~ .navbar-right {
       margin-right: 0;

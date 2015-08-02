@@ -1,21 +1,25 @@
+* {
+	transition: all 100ms ease-in;
+}
+
 body {
    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 400;
    font-size: 18px;
    line-height: 30px;
    -webkit-font-smoothing: antialiased;
-   background-color: #EBF6F6;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3 {
-	font-family: 'Times', serif;
+	font-family: $font-family-serif;
 	font-weight: 400;
 	font-style: italic;
 	letter-spacing: -0.02em;
 }
 
 h4, h5, h6 {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: $font-family-sans-serif; 
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 32px;
@@ -24,4 +28,140 @@ h4, h5, h6 {
 
 p {
 	margin-bottom: 20px;
+}
+
+header.navbar-default {
+	background-color: $teal;
+	border: none;
+	margin: 0;
+
+	.container {
+		position: relative;
+	}
+
+	a.logo {
+		display: block;
+		float: left;
+		position: absolute;
+		z-index: 2;
+		left: 15px;
+		top: 7px;
+
+		&:hover {
+			svg path {
+				fill: $navy;
+			}
+		}
+	}
+
+	nav.navbar-collapse {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		@media screen and (min-width: $screen-sm-min) {			
+			position: absolute;
+			right: 0;
+			top: 0;
+			padding-left: 200px;
+		}
+
+		form.form-inline {
+			float: left;
+			padding: 12px 0;
+
+			.input-group-btn {
+				.btn {
+					background: $teal-icon;
+					border: 1px solid $teal;
+					height: 38px;
+					top: -1px;
+				}
+			}
+		}
+
+		ul.nav {
+			li {
+				padding: 0 25px;
+
+				a {
+					color: $white;
+					font-weight: bold;
+					padding: 0;
+					display: inline-block;
+					line-height: 58px;					
+
+					&:before {
+						font-family: fontawesome;
+						font-size: 20px;
+						position: relative;
+						top: 1px;
+						display: inline-block;
+						padding-right: 10px;
+						color: $teal-icon;
+						position: relative;
+						font-style: normal;
+						font-weight: normal;
+						line-height: 1;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+
+					&:hover {
+						color: $background;
+
+						&:before {
+							//color: $navy;
+						}
+					}
+				}
+
+				&:last-of-type {
+					padding-right: 0;
+				}				
+
+				&.nav-injury-report {
+					a {
+						&:before {
+							content: "\f0fe";
+						}
+					}
+					
+				}
+
+				&.nav-schedule {
+					a {
+						&:before {
+							content: "\f15c";
+							font-size: 19px;
+							top: 0;
+						}
+					}
+					
+				}
+
+				&.nav-about {
+					a {
+						&:before {
+							content: "\f129";
+							font-size: 22px;
+						}
+					}
+					
+				}
+
+				&.nav-contact {
+					a {
+						&:before {
+							content: "\f044";
+							font-size: 22px;
+							top: 2px;
+						}
+					}
+					
+				}
+			}
+		}
+	}
 }

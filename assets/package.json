@@ -28,7 +28,7 @@
     "grunt-contrib-cssmin": "^0.12.3",
     "grunt-contrib-watch": "*",
     "grunt-postcss": "*",
-    "grunt-sass": "^1.0.0"
+    "grunt-sass": "*"
   },
   "dependencies": {
     "load-grunt-tasks": "*"
